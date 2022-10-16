@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ProjectsCreation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scanner = new Scanner (System.in);
+		
+		String name = scanner.nextLine();
+		int projects = Integer.parseInt(scanner.nextLine());
+		
+		int neededTime = projects * 3;
+		
+		System.out.printf("The architect %s will need %d hours to complete %d project/s." ,name , neededTime , projects );
+		scanner.close();
+	}
+
+}
